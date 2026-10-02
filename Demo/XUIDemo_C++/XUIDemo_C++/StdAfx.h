@@ -36,8 +36,8 @@
 #pragma comment(lib, "../../../lib/MMHelper.2017D.lib")
 #pragma comment(lib, "../../../lib/XUI.2017D.lib")
 #else
-#pragma comment(lib, "../../../lib/MMHelper.2017.lib")
-#pragma comment(lib, "../../../lib/XUI.2017.lib")
+#pragma comment(lib, "../../../lib/MMHelper.2017_Static_MT.lib")
+#pragma comment(lib, "../../../lib/XUI.2017_Static_MT.lib")
 #endif
 #endif
 #endif

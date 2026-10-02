@@ -30,3 +30,15 @@
 *.exe
 *.out
 *.app
+/XUI/Release_Unicode_Static_MT
+/XUI/Release_Unicode
+/ThirdDepend/webp/vs/Win32
+/ThirdDepend/tinyxml2/vs/Release_Unicode_Static_MT
+/ThirdDepend/tinyxml2/vs/Release_Unicode_Static
+/MMHelper/Release_Unicode
+/MMHelper/Release_Unicode_Static_MT
+/Demo/XUIDemo_C++/.vs/XUIDemo_C++
+*.pdb
+/Demo/XUIDemo_C++/XUIDemo_C++/Release/XUIDemo_C++.tlog
+/Demo/XUIDemo_C++/XUIDemo_C++/Release
+/.vs/XUI.2017
