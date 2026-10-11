@@ -259,6 +259,10 @@ void CDUIListViewCtrl::NeedRefreshView()
 
 void CDUIListViewCtrl::RefreshView()
 {
+	//animate draging
+	if (IsAnimateDraging()) return;
+
+	//refresh
 	enDuiListViewType ListViewType = GetListViewType();
 	if (ListView_List == ListViewType)
 	{
@@ -1104,6 +1108,20 @@ bool CDUIListViewCtrl::SetItemModel(CMMString strModel)
 	m_AttributeItemModel.SelectItem(strModel);
 
 	return true;
+}
+
+int CDUIListViewCtrl::GetItemInitCount()
+{
+	return m_AttributeItemModelInitCount.GetValue();
+}
+
+void CDUIListViewCtrl::SetItemInitCount(int nCount) 
+{
+	if (nCount == GetItemInitCount()) return;
+
+	m_AttributeItemModelInitCount.SetValue(nCount);
+
+	return;
 }
 
 void CDUIListViewCtrl::InitChild()
