@@ -133,6 +133,7 @@ CDUIControlBase * CDUIControlBase::Clone(bool bIncludeChild, bool bRefreshCtrlID
 
 	pControlClone->InitProperty();
 	(*pControlClone) = (*this);
+	pControlClone->m_bInternVisible = m_bInternVisible;
 	
 	if (NULL == MMInterfaceHelper(CDUIContainerCtrl, pControlClone))
 	{
@@ -2183,7 +2184,7 @@ void CDUIControlBase::PaintImageAttribute(HDC hDC, CDUIAttriImageSection *pAttri
 	return;
 }
 
-void CDUIControlBase::SetInternVisible(bool bVisible, bool bTraversal)
+void CDUIControlBase::SetInternVisible(bool bVisible)
 {
 	if (bVisible == m_bInternVisible) return;
 
